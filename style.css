@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 255, 255, 0.2);
+    background-image:
+        linear-gradient(to right, white 2px, transparent 2px),
+        linear-gradient(to top, white 2px, transparent 2px);
+    background-size: 70px 70px;
+    background-position: center;
+
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    min-height: 410px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.336);
+    background: #fffffa;
+}
+
+.popup {
+    width: 370px;
+
+
+}
+
+.popup :where(.picker, header, .color, .all-colors) {
+    display: flex;
+    align-items: center;
+}
+
+.popup .picker {
+    background: radial-gradient(aliceblue, skyblue);
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    background: #5372f0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.picked-colors {
+    margin: 10px;
+    background: #fffffa;
+
+}
+
+.picked-colors header {
+    justify-content: space-between;
+}
+
+.picked-colors .clear-all {
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-colors {
+    margin: 10px 0;
+    flex-flow: row wrap;
+}
+
+.all-colors .color {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
+.all-colors .color .rect {
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    margin-right: 8px;
+    /* background: #5372f0; */
+}
+
+.all-colors .color .value {
+    font-size: 0.96rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
