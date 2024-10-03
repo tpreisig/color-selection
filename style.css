@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Source Code Pro";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,27 +18,24 @@ body {
         linear-gradient(to top, white 2px, transparent 2px);
     background-size: 70px 70px;
     background-position: center;
-
-
 }
 
 .wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     display: flex;
     justify-content: center;
     width: auto;
     min-height: 410px;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.336);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.236);
     background: #fffffa;
+    border-radius: 8px;
 }
 
 .popup {
     width: 370px;
-
-
 }
 
 .popup :where(.picker, header, .color, .all-colors) {
@@ -47,15 +44,16 @@ body {
 }
 
 .popup .picker {
-    background: radial-gradient(aliceblue, skyblue);
+    background: radial-gradient(aliceblue, rgba(135, 207, 235, 0.584));
     padding: 30px 0;
     justify-content: center;
     align-items: center;
-
-
+    border-radius: 8px 8px 0 0;
 }
 
 .picker #color-picker {
+    font-family: "Source Code Pro";
+    font-weight: 700;
     outline: none;
     border: none;
     background: #5372f0;
@@ -68,8 +66,8 @@ body {
 
 .picked-colors {
     margin: 10px;
-    background: #fffffa;
-
+    background: rgb(246, 250, 254);
+    padding: 5px;
 }
 
 .picked-colors header {
@@ -99,7 +97,6 @@ body {
     width: 22px;
     border-radius: 5px;
     margin-right: 8px;
-    /* background: #5372f0; */
 }
 
 .all-colors .color .value {
