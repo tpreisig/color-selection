@@ -20,8 +20,11 @@ A web-based color picker application that allows users to select colors from the
 
 ## Prerequisites
 
-- A modern web browser that supports the [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper) (e.g., Firefox, Google Chrome, Microsoft Edge).
+- The EyeDropper API is an experimental web standard that allows JavaScript to trigger a native browser eyedropper tool for selecting colors from screen. 
+- A modern web browser that supports the [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper) (e.g. Google Chrome, Microsoft Edge).
+- ☝️ The EyeDropper is not supported in Firefox as of September 2025. 
 - No external dependencies or libraries are required.
+
 
 ## Installation
 
